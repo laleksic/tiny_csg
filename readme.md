@@ -8,9 +8,9 @@ Here's an example of the sort of thing this is for:
 
 [![CSG Prototype: Transforming Brushes](http://img.youtube.com/vi/DZAa6DT7ITg/0.jpg)](http://www.youtube.com/watch?v=DZAa6DT7ITg "CSG Prototype: Transforming Brushes")
 
-Take note that this is a hobby project and still just a prototype, so it is not tested enough, not optimized, probably buggy, etc. I can't promise when (or even if) I'll want and be able to keep working on this, but I've still uploaded it (as it is) in case anyone finds it useful. 
+Take note that this is a hobby project and still just a prototype, so it is not tested, not optimized, probably buggy, etc. I can't promise when (or even if) I'll want and be able to keep working on this, but I've still uploaded it (as it is) in case anyone finds it useful. 
 
-If you are interested, please feel free to comment or ask questions here. 
+If you are interested, please feel free to comment or ask questions [here](https://github.com/laleksic/tiny_csg/discussions). 
 
 The documentation consists of this readme file and a hastily coded under-commented demo (`demo.cpp`).
 
@@ -307,3 +307,4 @@ I'd like to thank the following folks for their very helpful tutorials and artic
 * Tristan Maat - [shader_loader](https://github.com/TLATER/shader_loader)
 * G-Truc Creation - [glm](https://github.com/g-truc/glm)
 * SDL Developers - [SDL2](https://www.libsdl.org/index.php)
+* GLEW Developers - [GLEW](https://github.com/nigels-com/glew#authors)

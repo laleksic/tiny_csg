@@ -1,4 +1,4 @@
-project(test)
+project(tiny_csg)
 
 # find_package(glm REQUIRED)
 find_package(SDL2 REQUIRED) # for demo only
