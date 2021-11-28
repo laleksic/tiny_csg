@@ -307,3 +307,4 @@ I'd like to thank the following folks for their very helpful tutorials and artic
 * Tristan Maat - [shader_loader](https://github.com/TLATER/shader_loader)
 * G-Truc Creation - [glm](https://github.com/g-truc/glm)
 * SDL Developers - [SDL2](https://www.libsdl.org/index.php)
+* GLEW Developers - [GLEW](https://github.com/nigels-com/glew#authors)
