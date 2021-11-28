@@ -10,7 +10,7 @@ Here's an example of the sort of thing this is for:
 
 Take note that this is a hobby project and still just a prototype, so it is not tested, not optimized, probably buggy, etc. I can't promise when (or even if) I'll want and be able to keep working on this, but I've still uploaded it (as it is) in case anyone finds it useful. 
 
-If you are interested, please feel free to comment or ask questions here. 
+If you are interested, please feel free to comment or ask questions [here](https://github.com/laleksic/tiny_csg/discussions). 
 
 The documentation consists of this readme file and a hastily coded under-commented demo (`demo.cpp`).
 
