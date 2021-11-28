@@ -1,6 +1,6 @@
 project(test)
 
-find_package(GLM REQUIRED)
+# find_package(glm REQUIRED)
 find_package(SDL2 REQUIRED) # for demo only
 find_package(GLEW REQUIRED) # for demo only
 
@@ -17,7 +17,8 @@ add_library(csg
     query_frustum.cpp
     rebuild.cpp
 )
-target_link_libraries(csg PUBLIC glm)
+target_include_directories(csg PUBLIC 3rdp/glm)
+# target_link_libraries(csg PUBLIC glm)
 target_compile_options(csg PRIVATE -Wall -Wextra -Wpedantic)
 
 add_executable(demo
