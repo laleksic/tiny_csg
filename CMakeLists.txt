@@ -28,7 +28,12 @@ add_executable(demo
     3rdp/shader_loader/src/shader_program.cpp        
     3rdp/randomColor-cpp/randomcolor.cpp
 )
-target_link_libraries(demo PRIVATE csg SDL2::SDL2 SDL2::SDL2main GLEW::GLEW)
+if (WIN32)
+    target_link_libraries(demo PRIVATE csg SDL2::SDL2 SDL2::SDL2main GLEW::GLEW)
+endif ()
+if (UNIX)
+    target_link_libraries(demo PRIVATE csg SDL2::SDL2 SDL2::SDL2main GLEW::GLEW GL)
+endif ()
 target_include_directories(demo PRIVATE 3rdp/flythrough_camera)
 target_include_directories(demo PRIVATE 3rdp/shader_loader/include)
 target_include_directories(demo PRIVATE 3rdp/randomColor-cpp)
