@@ -270,6 +270,8 @@ int main(int, char**) {
         DEFER( delete vert );
         Shader *frag = new Shader(solid_frag, strlen(solid_frag), GL_FRAGMENT_SHADER);
         DEFER( delete frag );
+        vert->compile();
+        frag->compile();
         Shader *shaders[] = {vert, frag};
         solid_shader = new ShaderProgram(shaders, 2);
     }
