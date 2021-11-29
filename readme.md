@@ -1,6 +1,6 @@
 # tiny_csg
 
-**tiny_csg** is a library that generates meshes from brush-based level data and supports incremental updates (real-time CSG). It is intended to be used as a backend in 3d level editors and/or generators.
+**tiny_csg** is a C++ library that generates meshes from brush-based level data and supports incremental updates (real-time CSG). It is intended to be used as a backend in 3d level editors and/or generators.
 
 Here's an example of the sort of thing this is for (thumbnails are links to youtube videos):
 
