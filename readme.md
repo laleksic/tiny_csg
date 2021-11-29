@@ -104,7 +104,7 @@ The *volume operation* describes how the brush affects the world. Here's some ex
 
 * air brush -- fills its volume unconditionally with air
 * solid brush -- fills its volume unconditionally with solid matter
-* flood brush -- converts any air intersecting with its volume to water, but leave other volumes (like solid matter) untouched
+* flood brush -- converts any air intersecting with its volume to water, but leaves other volumes (like solid matter) untouched
 
 Volume operations are implemented as functions from volume to volume.
 
