@@ -2,7 +2,7 @@
 
 **tiny_csg** is a library that generates meshes from brush-based level data and supports incremental updates (real-time CSG). It is intended to be used as a backend in 3d level editors and/or generators.
 
-Here's an example of the sort of thing this is for:
+Here's an example of the sort of thing this is for (thumbnails are links to youtube videos):
 
 [![CSG Level Editor Prototype](http://img.youtube.com/vi/bU-jOUQH5xI/0.jpg)](http://www.youtube.com/watch?v=bU-jOUQH5xI "CSG Level Editor Prototype")
 
@@ -12,7 +12,7 @@ Take note that this is a hobby project and still just a prototype, so it is not 
 
 If you are interested, please feel free to comment or ask questions [here](https://github.com/laleksic/tiny_csg/discussions). 
 
-The documentation consists of this readme file and a hastily coded under-commented demo (`demo.cpp`).
+The documentation consists of this readme file and a hastily coded under-commented demo (`demo.cpp`). In the demo use WASD/Space/C to fly around and the mouse to look.
 
 Building **tiny_csg** requires C++20 and GLM (bundled). The demo additionaly needs OpenGL 2.1, SDL2 and GLEW. The `3rdp` directory contains GLM and some extra third party libraries used in the demo. 
 
@@ -35,6 +35,7 @@ make -j4
 ```
 
 Tested only on Windows 7 MSYS2 and Manjaro Linux.
+This will build both the library and the demo.
 
 ## Usage
 
@@ -290,6 +291,15 @@ std::any brush_t::userdata;
 * The work done per-brush when rebuilding can be parallelized, but isn't, yet.
 * Nothing is done to prevent or remove T-junctions.
 * In general this is still just a prototype, not tested enough, not optimized, probably buggy, etc.
+
+## File overview
+
+* `csg.hpp` - public header (you include this)
+* `csg_private.hpp` - implementation header (I include this)
+* `rebuild.cpp` - the csg algorithm is implemented here
+* `query_*.cpp` - every intersection query gets its own implementation file
+* `csg.cpp` - everything else is here (constructors/destructors/getters/setters/etc.)
+* `demo*.cpp` - demo sources
 
 ## Thanks
 
