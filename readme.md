@@ -14,11 +14,19 @@ If you are interested, please feel free to comment or ask questions [here](https
 
 The documentation consists of this readme file and a hastily coded under-commented demo (`demo.cpp`).
 
-Building **tiny_csg** requires C++20 and GLM. The demo additionaly needs OpenGL 2.1, SDL2 and GLEW. The `3rdp` directory contains some extra third party libraries used only in the demo. 
+Building **tiny_csg** requires C++20 and GLM (bundled). The demo additionaly needs OpenGL 2.1, SDL2 and GLEW. The `3rdp` directory contains GLM and some extra third party libraries used in the demo. 
 
 ## Building
 
-As always with CMake:
+MSYS2:
+```
+mkdir build
+cd build
+cmake .. -G"MSYS Makefiles" 
+make -j4
+```
+
+Linux:
 ```
 mkdir build
 cd build
@@ -26,7 +34,7 @@ cmake ..
 make -j4
 ```
 
-Tested only on Windows 7 MSYS2.
+Tested only on Windows 7 MSYS2 and Manjaro Linux.
 
 ## Usage
 
