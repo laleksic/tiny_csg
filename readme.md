@@ -264,10 +264,10 @@ struct ray_hit_t {
     glm::vec3  position;
 };
 
-std::vector<brush_t*>  brush_t::query_point(const glm::vec3& point);
-std::vector<brush_t*>  brush_t::query_box(const box_t& box);
-std::vector<ray_hit_t> brush_t::query_ray(const ray_t& ray);
-std::vector<brush_t*>  brush_t::query_frustum(const glm::mat4& view_projection);
+std::vector<brush_t*>  world_t::query_point(const glm::vec3& point);
+std::vector<brush_t*>  world_t::query_box(const box_t& box);
+std::vector<ray_hit_t> world_t::query_ray(const ray_t& ray);
+std::vector<brush_t*>  world_t::query_frustum(const glm::mat4& view_projection);
 ```
 
 * The point query returns the brushes whose bounding box contains the given point.
